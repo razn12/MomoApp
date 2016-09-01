@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:background="#e1f5fe"
+    android:orientation="vertical"
+    tools:context="com.example.raazn.momoapp.priceInformation">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="List of all items with its sub items."
+        android:id="@+id/textView12"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textStyle="bold"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="ITEM NAME"
+            android:id="@+id/textView13"
+            android:textStyle="bold"
+            android:paddingTop="5dp"/>
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="SUB ITEM 1"
+            android:id="@+id/textView14"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="SUB ITEM 2"
+            android:id="@+id/textView15"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="SUB ITEM 3"
+            android:id="@+id/textView24"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="SUB ITEM 4"
+            android:id="@+id/textView25"
+            android:textStyle="bold"
+             />
+
+    </LinearLayout>
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_weight=".8"
+        android:layout_height="0dp"
+        android:paddingTop="5dp"
+        android:id="@+id/itemListView"
+        />
+
+
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="Additem"
+        android:background="@color/colorPrimary"
+        android:textColor="#FFFFFF"
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:onClick="additem"
+        android:layout_margin="2dp"/>
+
+
+</LinearLayout>

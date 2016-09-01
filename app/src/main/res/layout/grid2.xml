@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="3dp"
+    tools:context="com.example.raazn.momoapp.Griditem"
+    android:background="#83778b">
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            card_view:cardCornerRadius="4dp"
+            card_view:cardBackgroundColor="#332d2d"
+            card_view:cardElevation="4dp">
+            <ImageView
+                android:layout_width="170dp"
+                android:layout_height="130dp"
+                android:src="@drawable/backgr"/>
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Steam Momo"
+                android:gravity="center"
+                android:id="@+id/gtext"
+                android:textStyle="bold"
+                android:padding="20dp"
+                android:textColor="#ffffff"
+                android:layout_gravity="left|top" />
+
+        </android.support.v7.widget.CardView>
+
+
+
+
+</FrameLayout>

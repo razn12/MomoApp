@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:orientation="vertical"
+    tools:context="com.example.raazn.momoapp.Orderdetail"
+    android:background="#e1f5fe">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        android:text="Below is the ordered item Description"
+        android:textStyle="bold" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="SN"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="DESCRIPTION"
+            android:textStyle="bold"
+             />
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="QTY"
+            android:textStyle="bold"
+            />
+
+
+        <TextView
+            android:layout_width="100dp"
+
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="AMOUNT"
+            android:textStyle="bold"
+             />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="TIME"
+            android:id="@+id/textView23"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:id="@+id/listView2"
+        android:layout_weight=".8" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total amount: $ "
+            android:layout_gravity="bottom"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="0.0 "
+            android:layout_gravity="bottom"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/order_total"
+             />
+
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:text="Search"
+            android:id="@+id/button11"
+            android:layout_gravity="bottom"
+            android:onClick="search"
+            android:background="@color/colorPrimary"
+            android:textColor="#FFFFFF"
+            android:padding="5dp"
+            android:textStyle="bold"
+            />
+
+        <EditText
+            android:layout_width="200dp"
+            android:layout_gravity="bottom"
+            android:layout_height="wrap_content"
+            android:hint="Item name"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/esearch"
+            android:layout_weight="0.28" />
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:text="Delete all"
+            android:id="@+id/button4"
+            android:layout_gravity="bottom"
+            android:onClick="delete"
+            android:background="@color/colorPrimary"
+            android:textColor="#FFFFFF"
+            android:padding="5dp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

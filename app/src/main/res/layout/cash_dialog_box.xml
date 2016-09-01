@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e1f5fe">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:id="@+id/imageView2"
+        android:src="@drawable/five"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="cashHandler"/>
+
+     />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:src="@drawable/twenty"
+        android:id="@+id/imageView3"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/imageView6"
+        android:layout_toEndOf="@+id/imageView6" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:id="@+id/imageView4"
+        android:src="@drawable/fifty"
+        android:layout_below="@+id/imageView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:id="@+id/imageView5"
+        android:src="@drawable/hundreed"
+        android:layout_below="@+id/imageView3"
+        android:layout_toRightOf="@+id/imageView2"
+        android:layout_toEndOf="@+id/imageView2" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:id="@+id/imageView6"
+        android:src="@drawable/ten"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/imageView2"
+        android:layout_toEndOf="@+id/imageView2" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:text="ok"
+        android:id="@+id/ok"
+        android:onClick="ok"
+        android:background="@color/colorPrimary"
+        android:textColor="#FFFFFF"
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:layout_alignBottom="@+id/imageView5"
+        android:layout_alignRight="@+id/imageView3"
+        android:layout_alignEnd="@+id/imageView3" />
+</RelativeLayout>

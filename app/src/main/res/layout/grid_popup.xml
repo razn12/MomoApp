@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingBottom="5dp"
+    android:paddingRight="10dp"
+    android:background="#858c8f"
+    android:gravity="center"
+    >
+
+    <Button
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#ffffff"
+        android:padding="8dp"
+        android:layout_margin="3dp"
+        android:background="@drawable/popup"
+
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        android:text="Beef Steam Momo"
+        android:id="@+id/b1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        />
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        android:text="Pork Steam Momo"
+        android:id="@+id/b2"
+        android:layout_alignBottom="@+id/b1"
+        android:layout_toRightOf="@+id/b1"
+        android:layout_toEndOf="@+id/b1"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#ffffff"
+        android:padding="8dp"
+        android:layout_margin="3dp"
+        android:background="@drawable/popup"/>
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        android:text="Chicken Stem Momo"
+        android:id="@+id/b3"
+        android:layout_below="@+id/b1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#ffffff"
+        android:padding="8dp"
+        android:layout_margin="3dp"
+        android:background="@drawable/popup"/>
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        android:text="Veg Steam Momo"
+        android:id="@+id/b4"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#ffffff"
+        android:padding="8dp"
+        android:background="@drawable/popup"
+        android:layout_alignTop="@+id/b3"
+        android:layout_alignLeft="@+id/b2"
+        android:layout_alignStart="@+id/b2" />
+</RelativeLayout>

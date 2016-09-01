@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e1f5fe">
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="ITEM NAME"
+        android:id="@+id/i1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:gravity="center|left"
+        android:paddingRight="8dp"/>
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:text="price"
+        android:id="@+id/i2"
+        android:gravity="center|left"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/i1"
+        android:layout_toEndOf="@+id/i1"
+        android:paddingRight="8dp"/>
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:paddingRight="8dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="discount"
+        android:id="@+id/i3"
+        android:gravity="center|left"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/i2"
+        android:layout_toEndOf="@+id/i2" />
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:paddingRight="8dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/i4"
+        android:gravity="center|left"
+        android:layout_alignBottom="@+id/i3"
+        android:layout_toRightOf="@+id/i3"
+        android:layout_toEndOf="@+id/i3" />
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/i5"
+        android:layout_alignBottom="@+id/i4"
+        android:layout_toRightOf="@+id/i4"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:paddingRight="8dp"
+        android:gravity="center|left"
+        android:layout_toEndOf="@+id/i4" />
+</RelativeLayout>
